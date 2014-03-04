@@ -1,3 +1,9 @@
+'''
+This is a script that takes two files and determines whether they are the same
+If not, the deviant values are written to an output file
+Patrick Keaveny , 2014
+'''
+
 import argparse
 
 if __name__ == "__main__":
@@ -16,7 +22,6 @@ if __name__ == "__main__":
     with open(path_two, 'w') as out_file:
         for user in all_users:
             if user not in written_users:
-                print user
                 out_file.write(str(user))
 
 
