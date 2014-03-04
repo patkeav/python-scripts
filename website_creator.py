@@ -34,7 +34,7 @@ def _contents(file_path):
     template = ''
     with file1 as in_file:
         for line in in_file:
-            template += line + '\n'
+            template += line 
     return template
         
 '''
